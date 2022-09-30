@@ -1,0 +1,16 @@
+public class Main {
+    public  static void main (String[] args) {
+        int a[] = {5, 65, 53,35,562,456,246,13,453,43,865,57,53,576,53};
+        int b = a[0];
+        int c = a[0];
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] > b) {
+                c = b;
+                b = a[i];
+            } else if (a[i] > c && a[i] != b) {
+                c = a[i];
+            }
+        }
+        System.out.println("the second largest number " + c);
+    }
+}
